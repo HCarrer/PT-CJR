@@ -3,21 +3,51 @@
         font-family: Helvetica, sans-serif;
     }
     
-    img.logo {
-        text-align: center;
+    .div-logo {
         width: 100px;
+        height: 55px;
+        display: block;
+        margin: 0;
+        position: relative;
+        bottom: 10px;
+        left: 50%;
+        top: 0px;
+        transform: translateX(-50%);
+    }
+    
+    img#logo {
+        display: block;
+        width: 100%;
+        margin: 0;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+    }
+    
+    img#logo:hover {
+        transform: rotateY(360deg);
     }
     
     .topnav {
-        overflow: hidden;
-        padding-top: 5px;
+        padding-top: 0px;
         padding-left: 0px;
         padding-right: 0px;
-        padding-bottom: 0px;
+        padding-bottom: 10px;
     }
     
-    .topnav ul {
+    #MenuSuperior {
         text-align: center;
+    }
+    
+    ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
     }
     
     .topnav ul li {
@@ -29,10 +59,10 @@
     #Searchbar {
         font-size: 15px;
         border-radius: 20px;
-        width: 100px;
+        width: 110px;
         height: 20px;
-        text-align: left;
-        padding-left: 5px;
+        text-align: right;
+        padding-right: 10px;
     }
     
     input.searchbar:focus {
@@ -64,7 +94,7 @@
         text-align: center;
         height: 320px;
         width: 98%;
-        background-image: url("Assets/Ayrton\ Iuri\ -FS\ Salad\ Deck\ Sull\ 19x16.jpg");
+        background-image: url("Assets/banner-overthink-cjr.jpg");
     }
     
     .disable-select {
@@ -104,7 +134,7 @@
     }
     
     div input {
-        font-size: 25px;
+        font-size: 20px;
     }
     
     .inputs label {
@@ -112,7 +142,9 @@
     }
     
     .submit-button {
-        font-size: 20px;
+        font-size: 16px;
+        width: 80px;
+        height: 32px;
         border-radius: 20px;
         cursor: pointer;
     }
